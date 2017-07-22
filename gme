@@ -1,8 +1,11 @@
-#!/home/dd/anaconda3/bin/python  ########################
-"""                                                     #
-gpgme.py v1.3 (July 22nd 2017)                          #
-"""                                                     #
-#What's New: pylint formatted  ##########################
+#!/home/dd/anaconda3/bin/python  
+########################################################
+#                                                      #
+#               gme v1.4 (July 22nd 2017)              #
+#                                                      #
+#                GnuPG encryption module               #
+#                                                      #
+#  What's New: code clean-up (this header)  ############
 
 import gnupg
 import sys
@@ -30,7 +33,6 @@ def gpg_me(clear_text, pubkey_filename='pubkey.asc', err=False):
 if __name__ == '__main__':
 
     args = []
-
     [args.append(item) for item in sys.argv[1:]]
     print(gpg_me(*args))
     
