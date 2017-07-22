@@ -4,15 +4,14 @@
 
 ######################################################
 #                                                    #
-#               gme v2.0 (July 22nd 2017)            #
+#               gme v2.1 (July 22nd 2017)            #
 #                                                    #
-#  What's New: Minor code formating                  #
+#  What's New: Removed os.chdir(25) + import os(15)  #
 #                                                    #
 ######################################################
 
 import gnupg
 import sys
-import os
 
 
 def main(clear_text, 
@@ -23,8 +22,7 @@ def main(clear_text,
        and file path, returns PGP-encrypted string."""
     
     gpg = gnupg.GPG()
-    os.chdir(pubkey_file_path)
-    key_data = open(pubkey_file_name).read()
+    key_data = open(pubkey_file_path + '/' + pubkey_file_name).read()
 
     import_result = gpg.import_keys(key_data)
     fingerprint = import_result.results[0]['fingerprint']
