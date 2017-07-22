@@ -4,9 +4,9 @@
 
 ######################################################
 #                                                    #
-#               gme v1.7 (July 22nd 2017)            #
+#               gme v1.8 (July 22nd 2017)            #
 #                                                    #
-#  What's New: changed gpgme() to main()             #
+#  What's New: pylint                                #
 #                                                    #
 ######################################################
 
@@ -15,9 +15,9 @@ import gnupg
 import sys
 import os
 
-def main(clear_text,
-           pubkey_file_name='pubkey.asc',
-           pubkey_file_path='/home/dd/Documents/pubkeys'):
+def main(clear_text, 
+    pubkey_file_name='pubkey.asc', 
+    pubkey_file_path='/home/dd/Documents/pubkeys'):
 
     """Takes clear text string, optional pubkey filename
     and file path, returns PGP-encrypted string."""
