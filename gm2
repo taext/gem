@@ -38,7 +38,4 @@ def main(clear_text,
 if __name__ == '__main__':
 
     args = sys.stdin.read()
-
-#    args = []
-#    [args.append(item) for item in sys.argv[1:]]
     print(main(args))
