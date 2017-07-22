@@ -1,33 +1,36 @@
-#!/home/dd/anaconda3/bin/python
+#!/home/dd/anaconda3/bin/python  ########################
+"""                                                     #
+gpgme.py v1.3 (July 22nd 2017)                          #
+"""                                                     #
+#What's New: pylint formatted  ##########################
 
-# gpgme.py v1.1 (July 22nd 2017)  ########################
-#                                                        #
-# What's New: Added default pubkey filename (line 31-34) #
-
-import gnupg, sys, os
+import gnupg
+import sys
+import os
 
 
-def gpg_me(pubkey_filename, clear_text, err=False):
-    
-    """Takes pubkey filename and clear text string, 
+def gpg_me(clear_text, pubkey_filename='pubkey.asc', err=False):
+
+    """Takes pubkey filename and clear text string,
     returns GPG encrypted string."""
-    
+
     gpg = gnupg.GPG()
     os.chdir('/home/dd/Documents/pubkeys')
     key_data = open(pubkey_filename).read()
-    
+
     import_result = gpg.import_keys(key_data)
     fingerprint = import_result.results[0]['fingerprint']
-    
+
     encr_data = gpg.encrypt(clear_text, fingerprint)
     result = str(encr_data)
-    
+
     if err: return result, encr_data.stderr
     else: return result
-        
+
 if __name__ == '__main__':
+
+    args = []
+
+    [args.append(item) for item in sys.argv[1:]]
+    print(gpg_me(*args))
     
-    if len(sys.argv) == 3:
-        print(gpg_me(sys.argv[1], sys.argv[2], err=False))
-    if len(sys.argv) == 2:
-        print(gpg_me('pubkey.asc', sys.argv[1], err=False))
