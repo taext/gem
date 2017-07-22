@@ -1,25 +1,28 @@
-#!/home/dd/anaconda3/bin/python  
+#!/home/dd/anaconda3/bin/python
+"""gme - GnuPG encryption module."""
 ########################################################
 #                                                      #
-#               gme v1.4 (July 22nd 2017)              #
+#               gme v1.5 (July 22nd 2017)              #
 #                                                      #
 #                GnuPG encryption module               #
 #                                                      #
-#  What's New: code clean-up (this header)  ############
+#  What's New:  Added optional pubkey_file_path        #
+#               argument (line 15) + pylint  ###########
 
 import gnupg
 import sys
 import os
 
+def gpg_me(clear_text,
+           pubkey_file_name='pubkey.asc',
+           pubkey_file_path='/home/dd/Documents/pubkeys'):
 
-def gpg_me(clear_text, pubkey_filename='pubkey.asc', err=False):
-
-    """Takes pubkey filename and clear text string,
-    returns GPG encrypted string."""
+    """Takes clear text string, optional pubkey filename
+    and file path, returns GPG encrypted string."""
 
     gpg = gnupg.GPG()
-    os.chdir('/home/dd/Documents/pubkeys')
-    key_data = open(pubkey_filename).read()
+    os.chdir(pubkey_file_path)
+    key_data = open(pubkey_file_name).read()
 
     import_result = gpg.import_keys(key_data)
     fingerprint = import_result.results[0]['fingerprint']
@@ -27,8 +30,7 @@ def gpg_me(clear_text, pubkey_filename='pubkey.asc', err=False):
     encr_data = gpg.encrypt(clear_text, fingerprint)
     result = str(encr_data)
 
-    if err: return result, encr_data.stderr
-    else: return result
+    return result
 
 if __name__ == '__main__':
 
