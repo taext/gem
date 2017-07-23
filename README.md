@@ -1,4 +1,3 @@
-<br>
 #gme
 
 **gme** is a Linux CLI for GPG string encryption:
