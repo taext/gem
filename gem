@@ -1,12 +1,12 @@
 #!/home/dd/anaconda3/bin/python
 
-"""GnuPG encryption module - pipe or arg version. (github.com/taext/gm2)"""
+"""GnuPG encryption module. (github.com/taext/gm2)"""
 
 ######################################################
 #                                                    #
-#               gem v2.8 (July 23rd 2017)            #
+#               gem v2.9 (July 23rd 2017)            #
 #                                                    #
-#  What's New: Renamed gme to gem                    #
+#  What's New: Minor change to docstring             #
 #                                                    #
 #                                                    #
 ######################################################
