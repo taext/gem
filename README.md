@@ -32,4 +32,4 @@ when called without arguments, **gem** takes input from the keyboard
 
     cle
     
-(adding a custom keyboard shortcut is recommended)
+(adding a custom Linux GUI keyboard shortcut is highly recommended)
