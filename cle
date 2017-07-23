@@ -1,0 +1,41 @@
+#!/home/dd/anaconda3/bin/python
+
+"""cle - GnuPG clipboard encryption module. (github.com/taext/cle)"""
+
+######################################################
+#                                                    #
+#               cle v2.6 (July 23rd 2017)            #
+#                                                    #
+#  What's New: Changed name from gmc to cle          #
+#                                                    #
+#                                                    #
+######################################################
+
+import gnupg
+import sys
+import pyperclip
+
+def main(clear_text,
+         pubkey_file_name='pubkey.asc',
+         pubkey_file_path='/home/dd/Documents/pubkeys/'):
+
+    """Takes clear text string, optionally pubkey filename
+       and file path, returns PGP-encrypted string."""
+
+    gpg = gnupg.GPG()
+    key_data = open(pubkey_file_path + pubkey_file_name).read()
+
+    import_result = gpg.import_keys(key_data)
+    fingerprint = import_result.results[0]['fingerprint']
+
+    encr_data = gpg.encrypt(clear_text, fingerprint)
+    result = str(encr_data)
+
+    return result
+
+
+if __name__ == '__main__':
+
+    args = pyperclip.paste()
+    pyperclip.copy(main(args))
+    
