@@ -8,9 +8,9 @@
 
     import gme
     
-    encrypted_str = gme.gme(clear_text, 
-                            pubkey_file_name='pubkey.asc', 
-                            pubkey_file_path='/home/dd/Documents/pubkeys')
+    encrypted_str = gme.main(clear_text, 
+                             pubkey_file_name='pubkey.asc', 
+                             pubkey_file_path='/home/dd/Documents/pubkeys/')
 
 <br>
 
