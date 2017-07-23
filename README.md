@@ -1,7 +1,7 @@
 # gme & gm2
 
 
-gme is a Linux CLI for GPG string encryption:
+**gme** is a Linux CLI for GPG string encryption:
     
     gme "cleartext" [pub_key_file_name] [pub_key_file_path]
     
@@ -14,7 +14,7 @@ gme can also be used as a Python module:
                             pubkey_file_path='/home/dd/Documents/pubkeys')
 
 
-gm2 is a Linux CLI tool for piping input:
+**gm2** is a Linux CLI tool for piping input:
 
     echo "Hello" | gm2
     
