@@ -26,10 +26,10 @@ when called without arguments, **gem** takes input from the keyboard
 
 <br>
 
-# gmc
+# cle
 
-**gmc** encrypts the clipboard content in place
+**cle** encrypts the clipboard content in place
 
-    gmc
+    cle
     
-(add a custom keyboard shortcut for convenience)
+(adding a custom keyboard shortcut is recommended)
