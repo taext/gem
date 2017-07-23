@@ -26,3 +26,11 @@
     gm2
     
 (end keyboard input with CTRL-D)
+
+<br>
+
+**gmc** encrypts clipboard content in place
+
+    gmc
+    
+(add a custom keyboard shortcut for convenience)
