@@ -1,0 +1,51 @@
+#!/home/dd/anaconda3/bin/python
+
+"""GnuPG encryption module - pipe version. (github.com/taext/gm2)"""
+
+######################################################
+#                                                    #
+#               gm4 v2.6 (July 23rd 2017)            #
+#                                                    #
+#  What's New: Combined gme and gm2                  #
+#                                                    #
+#                                                    #
+######################################################
+
+import gnupg
+import sys
+
+
+def main(clear_text,
+         pubkey_file_name='pubkey.asc',
+         pubkey_file_path='/home/dd/Documents/pubkeys/'):
+
+    """Takes clear text string, optionally pubkey filename
+       and file path, returns PGP-encrypted string."""
+
+    gpg = gnupg.GPG()
+    key_data = open(pubkey_file_path + pubkey_file_name).read()
+
+    import_result = gpg.import_keys(key_data)
+    fingerprint = import_result.results[0]['fingerprint']
+
+    encr_data = gpg.encrypt(clear_text, fingerprint)
+    result = str(encr_data)
+
+    return result
+
+
+if __name__ == '__main__':
+
+    if len(sys.argv) == 1:  # no arguments, piping mode
+
+        args = sys.stdin.read()  # if no piped input,
+        print(main(args))        # reads from keyboard
+        
+    else:
+        
+        args = []
+        [args.append(item) for item in sys.argv[1:]]
+
+        if args:
+            print(main(*args))
+    
