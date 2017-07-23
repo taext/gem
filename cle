@@ -1,12 +1,12 @@
 #!/home/dd/anaconda3/bin/python
 
-"""cle - GnuPG clipboard encryption. (github.com/taext/cle)"""
+"""cle (GnuPG) clipboard encryption (github.com/taext/cle)"""
 
 ######################################################
 #                                                    #
-#               cle v2.7 (July 23rd 2017)            #
+#               cle v2.8 (July 23rd 2017)            #
 #                                                    #
-#  What's New: Minor Change to docstring             #
+#  What's New: Minor change to docstring             #
 #                                                    #
 #                                                    #
 ######################################################
