@@ -29,6 +29,8 @@
 
 <br>
 
+# gmc
+
 **gmc** encrypts clipboard content in place
 
     gmc
