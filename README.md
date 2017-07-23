@@ -1,5 +1,6 @@
 # gme & gm2
 
+<br>
 
 **gme** is a Linux CLI for GPG string encryption:
     
@@ -13,6 +14,7 @@ gme can also be used as a Python module:
                             pubkey_file_name='pubkey.asc', 
                             pubkey_file_path='/home/dd/Documents/pubkeys')
 
+<br>
 
 **gm2** is a Linux CLI tool for piping input:
 
