@@ -1,12 +1,12 @@
 #!/home/dd/anaconda3/bin/python
 
-"""GnuPG encryption module. (github.com/taext/gm2)"""
+"""GnuPG encryption module. (github.com/taext/gem)"""
 
 ######################################################
 #                                                    #
-#               gem v2.9 (July 23rd 2017)            #
+#               gem v3.0 (July 23rd 2017)            #
 #                                                    #
-#  What's New: Minor change to docstring             #
+#  What's New: Updated gh address to new name (3)    #
 #                                                    #
 #                                                    #
 ######################################################
