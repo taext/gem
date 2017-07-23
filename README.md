@@ -1,4 +1,4 @@
-# gme
+# gem
 
 **gem** is a Linux CLI for GPG string encryption
     
