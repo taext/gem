@@ -4,7 +4,7 @@
     
     gme "cleartext" [pub_key_file_name] [pub_key_file_path]
     
-**gem** can also be used as a Python module
+**gem** can also be imported as a Python module
 
     import gme
     
