@@ -31,7 +31,7 @@
 
 # gmc
 
-**gmc** encrypts clipboard content in place
+**gmc** encrypts the clipboard content in place
 
     gmc
     
