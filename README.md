@@ -14,7 +14,7 @@
    (rename the file `rme` to `rme.py` before importing)
 
 
-Finally, **gem** can also take piped input at the command-line
+Finally, **gem** can also take piped string input at the command-line
 
     echo "Hello" | gm2
     
