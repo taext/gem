@@ -20,7 +20,7 @@
     
 when called without arguments, **gem** takes input from the keyboard
 
-    gm2
+    gem
     
 (end keyboard input with CTRL-D)
 
