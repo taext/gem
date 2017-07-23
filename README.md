@@ -20,7 +20,7 @@
 
     echo "Hello" | gm2
     
-**gm2** also takes keyboard input when called without arguments:
+**gm2** can also take keyboard input when called without arguments:
 
     gm2
     
