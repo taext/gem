@@ -1,6 +1,6 @@
 # gem
 
-**gem** is a Linux CLI for GPG string encryption
+**gem** is a Linux CLI for GnuPG string encryption
     
     gme "cleartext" [pub_key_file_name] [pub_key_file_path]
     
