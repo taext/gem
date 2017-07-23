@@ -4,10 +4,10 @@
 
 ######################################################
 #                                                    #
-#               gm2 v2.3 (July 22nd 2017)            #
+#               gm2 v2.4 (July 23rd 2017)            #
 #                                                    #
-#  What's New: Removed os.chdir (25)                 #
-#  and import os (15) + pylint                       #
+#  What's New: Moved '/* from (26) to (20)           #
+#                                                    #
 #                                                    #
 ######################################################
 
@@ -17,13 +17,13 @@ import sys
 
 def main(clear_text,
          pubkey_file_name='pubkey.asc',
-         pubkey_file_path='/home/dd/Documents/pubkeys'):
+         pubkey_file_path='/home/dd/Documents/pubkeys/'):
 
     """Takes clear text string, optionally pubkey filename
        and file path, returns PGP-encrypted string."""
 
     gpg = gnupg.GPG()
-    key_data = open(pubkey_file_path + '/' + pubkey_file_name).read()
+    key_data = open(pubkey_file_path + pubkey_file_name).read()
 
     import_result = gpg.import_keys(key_data)
     fingerprint = import_result.results[0]['fingerprint']
