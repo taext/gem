@@ -18,7 +18,7 @@
 
     echo "Hello" | gm2
     
-when called without arguments, **gm2** takes input from the keyboard
+when called without arguments, **gem** takes input from the keyboard
 
     gm2
     
