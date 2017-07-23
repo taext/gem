@@ -4,7 +4,7 @@
     
     gme "cleartext" [pub_key_file_name] [pub_key_file_path]
     
-gme can also be used as a Python module:
+**gme** can also be used as a Python module:
 
     import gme
     
@@ -16,11 +16,11 @@ gme can also be used as a Python module:
 
 # gm2
 
-**gm2** is a Linux CLI tool for piping input:
+**gm2** is the pipe input version of gme:
 
     echo "Hello" | gm2
     
-gm2 also takes keyboard input when called without arguments:
+**gm2** also takes keyboard input when called without arguments:
 
     gm2
     
