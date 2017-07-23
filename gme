@@ -4,9 +4,9 @@
 
 ######################################################
 #                                                    #
-#               gme v2.1 (July 22nd 2017)            #
+#               gme v2.2 (July 22nd 2017)            #
 #                                                    #
-#  What's New: Removed os.chdir(25) + import os(15)  #
+#  What's New: Moved '/* from (25) to (19)           #
 #                                                    #
 ######################################################
 
@@ -14,15 +14,15 @@ import gnupg
 import sys
 
 
-def main(clear_text, 
-         pubkey_file_name='pubkey.asc', 
-         pubkey_file_path = '/home/dd/Documents/pubkeys'):
-    
+def main(clear_text,
+         pubkey_file_name='pubkey.asc',
+         pubkey_file_path='/home/dd/Documents/pubkeys/'):
+
     """Takes clear text string, optionally pubkey filename 
        and file path, returns PGP-encrypted string."""
     
     gpg = gnupg.GPG()
-    key_data = open(pubkey_file_path + '/' + pubkey_file_name).read()
+    key_data = open(pubkey_file_path + pubkey_file_name).read()
 
     import_result = gpg.import_keys(key_data)
     fingerprint = import_result.results[0]['fingerprint']
