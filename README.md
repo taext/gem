@@ -11,7 +11,7 @@
     encrypted_str = gme.main(clear_text, 
                              pubkey_file_name='pubkey.asc', 
                              pubkey_file_path='/home/dd/Documents/pubkeys/')
-   (rename the file `rme` to `rme.py` before import)
+   if you rename the file `rme` to `rme.py`
 
 <br>
 
