@@ -1,4 +1,4 @@
-# gem (GnuPG encryption module)
+# gem (GnuPG Encryption Module)
 
 **gem** is a Linux CLI tool for GnuPG string encryption
     
