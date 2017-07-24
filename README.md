@@ -21,7 +21,8 @@ or be imported as a Python module
                              pubkey_file_path='/home/dd/Documents/pubkeys/')
    (rename or copy the file `gem` to `gem.py` before importing)
 
-    
+<br>    
+
 When called with no arguments, **gem** takes input from the keyboard
 
     gem
