@@ -1,18 +1,18 @@
 # gem
 
-**gem** is a Linux CLI tool for GnuPG string encryption:
+**gem** is a Linux CLI tool for GnuPG string encryption
     
     gem "cleartext" [pub_key_file_name] [pub_key_file_path]
 
 <br>
 
-**gem** also takes piped string input:
+**gem** can also take piped string input
 
     echo "Hello" | gem
 
 <br>
     
-**gem** can also be imported as a Python module:
+and be imported as a Python module:
 
     import gem
     
