@@ -3,6 +3,8 @@
 **gem** is a Linux CLI for GnuPG string encryption
     
     gme "cleartext" [pub_key_file_name] [pub_key_file_path]
+
+<br>
     
 **gem** can also be imported as a Python module
 
