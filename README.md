@@ -1,6 +1,8 @@
 # gem 
 (GnuPG encryption module)
 
+<br>
+
 **gem** is a Linux CLI tool for GnuPG string encryption
     
     gem "cleartext" [pub_key_file_name] [pub_key_file_path]
@@ -34,6 +36,8 @@ When executed with no arguments or piped input, **gem** takes input from the key
 
 # cle 
 (clipboard encryption)
+
+<br>
 
 **cle** encrypts the clipboard content in place
 
