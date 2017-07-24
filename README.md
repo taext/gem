@@ -1,4 +1,4 @@
-# gem (GnuPG Encryption Module)
+# gem (GnuPG encryption module)
 
 **gem** is a Linux CLI tool for GnuPG string encryption
     
@@ -31,7 +31,7 @@ When executed with no arguments or piped input, **gem** takes input from the key
 
 <br>
 
-# cle
+# cle (clipboard encryption)
 
 **cle** encrypts the clipboard content in place
 
