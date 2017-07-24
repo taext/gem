@@ -22,7 +22,7 @@ or be imported as a Python module
    (rename or copy the file `gem` to `gem.py` before importing)
 
     
-When called without arguments, **gem** takes input from the keyboard
+When called with no arguments, **gem** takes input from the keyboard
 
     gem
     
