@@ -3,7 +3,7 @@
 
 <br>
 
-**gem** is a Linux CLI tool for GnuPG string encryption
+**gem** as a Linux CLI tool for GnuPG string encryption
     
     gem "cleartext" [pub_key_file_name] [pub_key_file_path]
 
