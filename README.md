@@ -6,17 +6,17 @@
     
 **gem** can also be imported as a Python module
 
-    import gme
+    import gem
     
-    encrypted_str = gme.main(clear_text, 
+    encrypted_str = gem.main(clear_text, 
                              pubkey_file_name='pubkey.asc', 
                              pubkey_file_path='/home/dd/Documents/pubkeys/')
-   (rename the file `rme` to `rme.py` before importing)
+   (rename the file `gem` to `gem.py` before importing)
 
 
 Finally, **gem** can also take piped string input at the command-line
 
-    echo "Hello" | gm2
+    echo "Hello" | gem
     
 when called without arguments, **gem** takes input from the keyboard
 
