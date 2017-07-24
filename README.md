@@ -2,7 +2,7 @@
 
 **gem** is a Linux CLI tool for GnuPG string encryption:
     
-    gme "cleartext" [pub_key_file_name] [pub_key_file_path]
+    gem "cleartext" [pub_key_file_name] [pub_key_file_path]
 
 <br>
 
