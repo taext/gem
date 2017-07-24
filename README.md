@@ -11,7 +11,7 @@
     encrypted_str = gem.main(clear_text, 
                              pubkey_file_name='pubkey.asc', 
                              pubkey_file_path='/home/dd/Documents/pubkeys/')
-   (rename the file `gem` to `gem.py` before importing)
+   (rename or copy the file `gem` to `gem.py` before importing)
 
 
 Finally, **gem** can also take piped string input at the command-line
