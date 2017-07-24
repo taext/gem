@@ -12,7 +12,7 @@
 
 <br>
     
-or be imported as a Python module:
+or be imported as a Python module
 
     import gem
     
@@ -22,7 +22,7 @@ or be imported as a Python module:
    (rename or copy the file `gem` to `gem.py` before importing)
 
     
-When called without arguments, **gem** takes input from the keyboard:
+When called without arguments, **gem** takes input from the keyboard
 
     gem
     
@@ -32,7 +32,7 @@ When called without arguments, **gem** takes input from the keyboard:
 
 # cle
 
-**cle** encrypts the clipboard content in place:
+**cle** encrypts the clipboard content in place
 
     cle
     
