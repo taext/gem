@@ -23,7 +23,7 @@ or be imported as a Python module
 
 <br>    
 
-When called with no arguments or piped input, **gem** takes input from the keyboard
+When executed with no arguments or piped input, **gem** takes input from the keyboard
 
     gem
     
