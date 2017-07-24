@@ -12,7 +12,7 @@
 
 <br>
     
-and be imported as a Python module:
+or be imported as a Python module:
 
     import gem
     
