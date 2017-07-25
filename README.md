@@ -14,7 +14,7 @@
     
     gem "cleartext" [pub_key_file_name] [pub_key_file_path]
     
-![](images/pubkey_message.png?raw=true)
+![](pubkey_message.png?raw=true)
 
 <br>
 
