@@ -3,9 +3,9 @@
 
 <br>
 
-**gem** can be used 
+**gem** provides fast encryption to a default (or explicit) public key and can be used 
 
-1. as a Linux CLI tool (taking arguments or piped input)
+1. as a Linux CLI tool
 2. as a Python module
 
 <br>
