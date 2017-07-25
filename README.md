@@ -24,9 +24,9 @@
     
 2. **gem** as a Python module
 
-    import gem
+        import gem
     
-    encrypted_str = gem.main(clear_text, 
+        encrypted_str = gem.main(clear_text, 
                              pubkey_file_name='pubkey.asc', 
                              pubkey_file_path='/home/dd/Documents/pubkeys/')
    (rename or copy the file `gem` to `gem.py` before importing)
