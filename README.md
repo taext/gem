@@ -16,7 +16,7 @@
 
 <br>
 
-1b. **gem** taking piped string input
+1b. **gem** accepts piped string input
 
     echo "Hello" | gem
 
