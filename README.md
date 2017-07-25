@@ -3,20 +3,20 @@
 
 <br>
 
-**gem** provides fast encryption to a default (or explicit) public key and can be used 
+**gem** provides easy encryption to a default or explicit public key. It can be used 
 
 1. as a Linux CLI tool
 2. as a Python module
 
 <br>
 
-1. **gem** as a Linux CLI tool
+1a. **gem** as a Linux CLI tool
     
     gem "cleartext" [pub_key_file_name] [pub_key_file_path]
 
 <br>
 
-**gem** taking piped string input
+1b. **gem** taking piped string input
 
     echo "Hello" | gem
 
