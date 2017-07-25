@@ -5,12 +5,12 @@
 
 **gem** can be used 
 
-1. as a Linux CLI tool, taking arguments or piped input, and 
-2. as a Python module.
+1. as a Linux CLI tool (taking arguments or piped input)
+2. as a Python module
 
 <br>
 
-**gem** as a Linux CLI tool
+1. **gem** as a Linux CLI tool
     
     gem "cleartext" [pub_key_file_name] [pub_key_file_path]
 
@@ -22,7 +22,7 @@
 
 <br>
     
-or being imported as a Python module
+2. **gem** as a Python module
 
     import gem
     
