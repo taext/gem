@@ -3,7 +3,10 @@
 
 <br>
 
-**gem** can be used 1. as a Linux CLI tool, taking arguments or piped input, and 2. as a Python module.
+**gem** can be used 
+
+1. as a Linux CLI tool, taking arguments or piped input, and 
+2. as a Python module.
 
 <br>
 
