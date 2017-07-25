@@ -14,7 +14,7 @@
     
     gem "cleartext" [pub_key_file_name] [pub_key_file_path]
     
-![](pubkey_message.png?raw=true)
+![](https:/github.com/taext/gem/pubkey_message.png)
 
 <br>
 
