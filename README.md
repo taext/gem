@@ -10,25 +10,25 @@
 
 <br>
 
-1a. **gem** as a Linux CLI tool
+**gem** as a Linux CLI tool
     
     gem "cleartext" [pub_key_file_name] [pub_key_file_path]
 
 <br>
 
-1b. **gem** accepts piped string input
+**gem** accepts piped string input
 
     echo "Hello" | gem
 
 <br>
     
-2. **gem** as a Python module
+**gem** as a Python module
 
-        import gem
-    
-        encrypted_str = gem.main(clear_text, 
-                             pubkey_file_name='pubkey.asc', 
-                             pubkey_file_path='/home/dd/Documents/pubkeys/')
+    import gem
+
+    encrypted_str = gem.main(clear_text, 
+                         pubkey_file_name='pubkey.asc', 
+                         pubkey_file_path='/home/dd/Documents/pubkeys/')
    (rename or copy the file `gem` to `gem.py` before importing)
 
 <br>    
