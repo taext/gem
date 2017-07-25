@@ -3,6 +3,10 @@
 
 <br>
 
+**gem** can be used as a Linux CLI tool, taking arguments or piped input, and as a Python module.
+
+<br>
+
 **gem** as a Linux CLI tool
     
     gem "cleartext" [pub_key_file_name] [pub_key_file_path]
