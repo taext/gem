@@ -4,9 +4,9 @@
 
 ######################################################
 #                                                    #
-#               cle v2.8 (July 23rd 2017)            #
+#               cle v2.9 (July 23rd 2017)            #
 #                                                    #
-#  What's New: Minor change to docstring             #
+#  What's New: Minor change in main() docstr (22-23) #
 #                                                    #
 #                                                    #
 ######################################################
@@ -19,7 +19,7 @@ def main(clear_text,
          pubkey_file_name='pubkey.asc',
          pubkey_file_path='/home/dd/Documents/pubkeys/'):
 
-    """Takes clear text string, optionally pubkey filename
+    """Takes cleartext string, optionally pubkey file name
        and file path, returns PGP-encrypted string."""
 
     gpg = gnupg.GPG()
