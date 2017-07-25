@@ -13,8 +13,6 @@
 **gem** as a Linux CLI tool
     
     gem "cleartext" [pub_key_file_name] [pub_key_file_path]
-    
-![](https:/github.com/taext/gem/pubkey_message.png)
 
 <br>
 
