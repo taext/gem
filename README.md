@@ -2,6 +2,7 @@
 (GnuPG encryption module)
 
 third-party module used: gnupg
+
 linux program used: gpg
 
 <br>
