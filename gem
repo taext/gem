@@ -4,15 +4,19 @@
 
 ######################################################
 #                                                    #
-#               gem v3.0 (July 23rd 2017)            #
+#               gem v3.1 (October 9th 2020)          #
 #                                                    #
-#  What's New: Updated gh address to new name (3)    #
+#  What's New: Added error message bug fix           #
 #                                                    #
 #                                                    #
 ######################################################
 
 import gnupg
 import sys
+import gnupg._parsers
+
+# monkey patch from https://github.com/isislovecruft/python-gnupg/issues/207
+gnupg._parsers.Verify.TRUST_LEVELS["ENCRYPTION_COMPLIANCE_MODE"] = 23
 
 
 def main(clear_text,
