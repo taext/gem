@@ -43,7 +43,7 @@ When executed with no arguments or piped input, **gem** takes input from the key
 
 # cle 
 (clipboard encryption)
-
+(needs xclip to be installed on linux)
 <br>
 
 **cle** encrypts the clipboard content in place
