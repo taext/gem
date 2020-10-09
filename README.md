@@ -1,6 +1,7 @@
 # gem 
 (GnuPG encryption module)
-
+third-party module used: gnupg
+linux program used: gpg
 <br>
 
 **gem** provides easy encryption to a default or explicit public key. It can be used 
