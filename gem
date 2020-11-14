@@ -1,7 +1,7 @@
 #!/home/dd/anaconda3/bin/python
 
-"""   GnuPG encryption to default pubkey module. 
-(https://github.com/taext/gem-and-cle/blob/master/gem)"""
+          """       GPG encryption to default pubkey. 
+       (https://github.com/taext/gem-and-cle/blob/master/gem)  """
 
           _____                    _____                    _____          
          /\    \                  /\    \                  /\    \         
