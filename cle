@@ -20,7 +20,7 @@ import gnupg._parsers
 gnupg._parsers.Verify.TRUST_LEVELS["ENCRYPTION_COMPLIANCE_MODE"] = 23
 
 def main(clear_text,
-         pubkey_file_name='mypubkey.asc',
+         pubkey_file_name='pubkey.asc',
          pubkey_file_path='/path/to/pubkey/'):
 
     """Takes cleartext string, optionally pubkey file name
