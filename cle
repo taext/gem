@@ -4,19 +4,23 @@
 
 ######################################################
 #                                                    #
-#               cle v2.9 (July 23rd 2017)            #
+#               cle v3.0 (October 2020)              #
 #                                                    #
-#  What's New: Minor change in main() docstr (22-23) #
+#  What's New: Add error message bug fix             #
 #                                                    #
 #                                                    #
 ######################################################
 
 import gnupg
 import sys
-import pyperclip
+import clipboard
+import gnupg._parsers
+
+# monkey patch from https://github.com/isislovecruft/python-gnupg/issues/207
+gnupg._parsers.Verify.TRUST_LEVELS["ENCRYPTION_COMPLIANCE_MODE"] = 23
 
 def main(clear_text,
-         pubkey_file_name='pubkey.asc',
+         pubkey_file_name='miya_ubuntu_19.asc',
          pubkey_file_path='/home/dd/Documents/pubkeys/'):
 
     """Takes cleartext string, optionally pubkey file name
@@ -36,6 +40,8 @@ def main(clear_text,
 
 if __name__ == '__main__':
 
-    args = pyperclip.paste()
-    pyperclip.copy(main(args))
-    
+    args = clipboard.paste()
+    result = main(args)
+    clipboard.copy(result)
+    #print(f"result: {result}")
+    #print(f"clipboard: {clipboard.paste()}")    
